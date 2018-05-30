@@ -33,6 +33,16 @@ header {
 .site_navigation a:hover {
   color: #03a9f4;
 }
+.first {
+  margin: 0px 132px 0 130px;
+}
+.third{
+  margin 0px 0px 0px 90px;
+}
+.second{
+  margin: 0px 110px 0px 0px;
+  }
+}
 .content {
   list-style-type: none;
 }
@@ -46,14 +56,18 @@ header {
 }
 .content h2 {
   font-size: 30px;
-  line-height: 80px;
+  height: 95px;
 }
 figcaption {
   margin: 31px 0px 19px ;
+  font-family: 'Ubuntu', sans-serif;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  height: 25px;
 }
 button{ 
   display: block;
-  margin: 57px auto 71px;
+  margin:0px auto 71px ;
   padding: 22px 35px;
   background-color: white;
   border-color: #626262;
@@ -62,5 +76,22 @@ button{
 }
 .button_link{
   text-decoration: none;
+  color: #626262;
   
+}
+.button_link:hover {
+  color: #03a9f4;
+}
+.text{
+  height: 78px;
+  line-height: 24px;
+}
+main li {
+  margin-bottom: 135px; 
+}
+.left_post_last_line{
+  margin:0px 56px 58px 0px;
+}
+.right_post_last_line{
+  margin-bottom: 58px
 }
