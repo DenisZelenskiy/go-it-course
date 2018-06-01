@@ -10,10 +10,10 @@ body {
   line-height: 24px;
 }
 .container {
-  width: 901px;
+  width: 900px;
   margin: auto;
 }
-header {
+.header {
   width: 100%;
   padding-top: 77px;
   padding-bottom: 103px;
@@ -23,6 +23,10 @@ header {
   list-style-type: none;
   display: inline-block;
   margin-right: 103px;
+  margin-left:70px;
+}
+.site_navigation li:last-child{
+  margin-left:0;
 }
 .site_navigation a{
   text-align: center;
@@ -33,16 +37,7 @@ header {
 .site_navigation a:hover {
   color: #03a9f4;
 }
-.first {
-  margin: 0px 132px 0 130px;
-}
-.third{
-  margin 0px 0px 0px 90px;
-}
-.second{
-  margin: 0px 110px 0px 0px;
-  }
-}
+
 .content {
   list-style-type: none;
 }
@@ -52,46 +47,41 @@ header {
   width: 420px;
 }
 .left_post {
-  margin-right: 57px;
+  margin-right: 56px;
 }
-.content h2 {
+.headline {
   font-size: 30px;
   height: 95px;
 }
-figcaption {
+.figcaption_content {
   margin: 31px 0px 19px ;
   font-family: 'Ubuntu', sans-serif;
   color: #b4ad9e;
   text-transform: uppercase;
   height: 25px;
 }
-button{ 
+.load_more{ 
   display: block;
   margin:0px auto 71px ;
   padding: 22px 35px;
   background-color: white;
   border-color: #626262;
   border-width: 1px;
-
 }
 .button_link{
   text-decoration: none;
-  color: #626262;
-  
-}
-.button_link:hover {
-  color: #03a9f4;
+  color:#626262;
 }
 .text{
   height: 78px;
   line-height: 24px;
 }
-main li {
+.right_post,.left_post,.right_post_last_line,.left_post_last_line {
   margin-bottom: 135px; 
 }
 .left_post_last_line{
   margin:0px 56px 58px 0px;
 }
 .right_post_last_line{
-  margin-bottom: 58px
+  margin-bottom: 58px;
 }
