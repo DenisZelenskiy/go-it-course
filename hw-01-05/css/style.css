@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wraper {
+  width: 1110px;
+  margin: auto;
+}
+.header {
+  padding: 38px 0px 33px 0px;
+}
+.logo {
+  float: left;
+}
+.menu {
+  float: right;
+}
+
+.menu_link {
+  float: right;
+  list-style-type: none;
+  margin-left: 32px;
+}
+.menu_link:first-child {
+  float: left;
+  margin-left: 0px;
+}
+
+.menu_link a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #0f0101;
+  font-weight: bold;
+}
+.menu_link a:hover {
+  color: #4ec6ab;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slide {
+  background-image: url("../img/slide.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.slide_title {
+  font-size: 60px;
+  margin-bottom: 37px;
+  color: #ffffff;
+}
+.slide_description {
+  font-size: 24px;
+  color: #ffffff;
+}
+.slide_link {
+  text-decoration: none;
+}
+
+.slide_button {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  font-size: 100px;
+  color: #ffffff;
+  width: 105px;
+}
+.slide_wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 218px 0px 285px 0px;
+}
+.slide_caption {
+  width: 735px;
+}
+.new_collection {
+  background-color: #e9f0fd;
+}
+.collection_titel {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 33px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #515151;
+}
+.collection_titel::after {
+  content: "";
+  height: 7px;
+  width: 164px;
+  background-color: #1abc9c;
+  display: block;
+  margin: 32px auto 80px;
+}
+.collection_prise {
+  width: 255px;
+}
+.collection_one {
+  position: relative;
+}
+.collection_hower {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 235px;
+  height: 261px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: -999;
+}
+.collection_img {
+  display: block;
+}
+.collection_link:hover .collection_hower {
+  z-index: 999;
+}
+.collection_hower_btn {
+  font-size: 30px;
+  line-height: 50px;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.collection_hower_links {
+  width: 166px;
+  display: flex;
+  justify-content: space-between;
+}
+.far,
+.fas,
+.collection_hower_card {
+  color: #ffffff;
+}
+.collection_hower_card {
+  font-size: 30px;
+  line-height: 50px;
+  width: 166px;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ffffff;
+  border-width: 1px;
+  margin-top: 7px;
+}
+.collection_hower_link:hover {
+  background-color: #1abc9c;
+}
+.collection_hower_card {
+  background-color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.collection_hower_card:hover {
+  background-color: #1abc9c;
+}
+.collection_info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 40px;
+}
+.collection_name,
+.collection_cost {
+  background-color: #323232;
+  color: #ffffff;
+  display: block;
+  width: 201px;
+}
+.collection_cost {
+  background-color: #8c8c8c;
+  width: 54px;
+  text-align: center;
+}
+.collection_name {
+  padding-left: 15px;
+}
