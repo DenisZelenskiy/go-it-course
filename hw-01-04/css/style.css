@@ -82,10 +82,10 @@
   text-transform: uppercase;
   line-height: 40px;
 }
-.products_link:hover .products_name {
+.products_name:hover  {
   background-color: #1abc9c;
 }
-.products_link:hover .products_price {
+.products_price:hover  {
   background-color: #7fd9c7;
 }
 .products_price {

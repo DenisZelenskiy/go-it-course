@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 1920px;
+}
+.conteiner {
+  width: 940px;
+}
+header {
+  height: 850px;
+  width: 1920px;
+  background: url("../img/bg.png");
+}

@@ -116,11 +116,16 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 95px;
 }
+.team_person{
+  display: flex;
+  justify-content: space-between;
+}
 .team_person_one{
     width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 87px;
 }
 .team_person_one_name{
     font-family: 'Montserrat', sans-serif;
@@ -139,24 +144,81 @@ font-family: 'Roboto', sans-serif;
     width: 380px;
     height: 470px;
 }
-.team_person_one_img:hover{    
+.team_person_one_position:hover .team_person_one_img{    
 position: absolute;
 right: 4px;
 bottom: 4px;
 box-shadow: 4px 4px #95e1d3;
+transition-duration: .2s;
 
 }
 .gradient{
     position: absolute;
     width: 380px;
     height: 470px;
-    background-image: linear-gradient(to top, #95e1d3, #ea8b89);
+    background-image: linear-gradient(to top, #f2e391, #ea8a89);
     right: 4px;
     bottom: 4px;
-    opacity: .7;
-    z-index: -999;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.team_person_one_img:hover .gradient{
-    z-index: 999;
+.team_person_one_position:hover .gradient{
+    z-index: 2;
+    opacity: .8;
+    transition-duration: .2s;
   
 }
+.share{
+  width: 227px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.share_button{
+  height: 56px;
+  width: 56px;
+  background-color: #fce38a;
+  border: none;
+}
+.share_button:hover{
+  background-color: #95e1d3;
+}
+.footer_span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color:#333333;
+}
+.footer_form_email{
+  width: 230px;
+  height: 40px;
+  margin: 10px auto 10px;
+  border: 1px solid #e5e5e5;
+}
+.footer_form_email::-webkit-input-placeholder{
+  font-size: 15px;
+  padding: 15px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer_form_button{
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: 1px solid #95e1d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+} 
+.footer_form{
+  display: flex;
+  width: 380px;
+  align-items: center;
+}
+
