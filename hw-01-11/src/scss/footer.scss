@@ -1,0 +1,31 @@
+.footer {
+  @extend %flex-base;
+  border-top: 1px solid $discription-color;
+  padding-top: 10px;
+  &_author {
+    color: $pink-color;
+  }
+
+}
+
+.footer_subscribe {
+  display: flex;
+  &-input {
+    @include box-size(230px, 45px);
+    padding-left: 15px;
+    border: 1px solid $discription-color;
+  }
+  &-btn {
+    background-color: $main-content-color;
+    padding: 15px 30px;
+    @extend %font-mont-bold;
+    font-size: 15px;
+    color: $header-text-color;
+    cursor: pointer;
+    @extend %transition;
+    &:hover {
+      color: $yellow-color;
+      @extend %transition;
+    }
+  }
+}

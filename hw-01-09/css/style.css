@@ -1,0 +1,214 @@
+@import 'normalize.css';
+@import 'fonts.css';
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat-bold', Arial, sans-serif;
+    text-align: center;
+}
+main {
+    padding-bottom: 20px;
+}
+.sign-up,
+.logo,
+.main-header,
+.btn,
+.partner-name,
+.partners-header {
+    font-family: 'Montserrat-bold', Arial, sans-serif;
+}
+
+a,
+.main-header,
+.main-discription,
+.btn-find-partner {
+    color: white;
+}
+
+.logo {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.main-discription {
+    font-size: 1.28em;
+}
+
+.partner-discription,
+.main-discription {
+    font-family: 'Roboto-light', Arial, sans-serif;
+}
+
+.main-header {
+    font-size: 2.14em;
+    text-transform: uppercase;
+}
+
+.partners-header {
+    font-size: 1.57em;
+}
+
+.sign-up>li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.sign-up>li:last-child {
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners-header {
+    margin-bottom: 20px;
+}
+
+.container:nth-child(2) {
+    padding: 65px 0 75px;
+}
+
+.partners-box {
+    width: 200px;
+    margin: auto;
+}
+
+.wrapper {
+    background-image: url(../img/Bg-image-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(3, 3, 3);
+    background-blend-mode: lighten;
+    min-height: 530px;
+}
+
+.img-holder {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    cursor: zoom-in;
+    transition: .3s linear;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.tv {
+    background: #ff4e50 url(../img/icon-tv.png) no-repeat center center;
+}
+
+.flask {
+    background: #ffa507 url(../img/icon-flask.png) no-repeat center center;
+}
+
+.coffee {
+    background: #1cd7ad url(../img/icon-coffee.png) no-repeat center center;
+}
+
+.telegram {
+    background: #4e73db url(../img/icon-plane.png) no-repeat center center;
+}
+
+.btn {
+    padding: 15px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 5px 5px rgba(10, 10, 10, 0.3);
+    transition: .3s linear;
+}
+
+.btn-find-partner {
+    background-color: #ff4e50;
+    margin-top: 40px;
+}
+
+.btn-other-partners {
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+}
+
+.sign-up>li:not(:first-child):hover {
+    background-color: #ff4e50;
+    transition: .3s linear;
+}
+
+.sign-up>li:not(:last-child):hover a {
+    color: #ff4e50;
+    transition: .3s linear;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: .3s linear;
+}
+
+@media (min-width: 768px) {
+    .sign-up {
+        display: flex;
+    }
+    .main {
+        padding-top: 160px;
+    }
+    .main-header {
+        margin-bottom: 40px;
+        font-size: 3.71em;
+    }
+    .partners-header {
+        margin-bottom: 30px;
+    }
+    .wrapper:nth-child(1) {
+        padding-top: 40px;
+    }
+    .main-discription {
+        font-size: 1.71em;
+    }
+    .wrapper {
+        min-height: 700px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .partners-box {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .partners {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-up {
+        margin-bottom: 120px;
+    }
+    .main {
+        padding-top: 35px;
+    }
+    .main-header {
+        margin-bottom: 17px;
+    }
+    .partners-box {
+        margin-bottom: 20px;
+    }
+    .wrapper:nth-child(1) {
+        padding-top: 10px;
+    }
+}

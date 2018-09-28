@@ -1,0 +1,95 @@
+.team-head {
+  margin-bottom: 90px;
+  &_top {
+    @extend %font-Kaushan;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &_bottom {
+    font-size: 30px;
+    @extend %font-mont-bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    &::after {
+      margin-top: 40px;
+      @include underline($pink-color, 45px);
+    }
+  }
+  &_discription {
+    width: 990px;
+    margin: 0 auto;
+    line-height: 20px;
+    color: $discription-color;
+  }
+}
+
+.our-team {
+  padding-bottom: 75px;
+  @extend %flex-base;
+  &_name {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &_specialty {
+    @extend %font-roboto;
+  }
+}
+
+.our-team_img-holder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include box-size(380px, 470px);
+  @extend %transition;
+  margin-bottom: 30px;
+  >img {
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: $gradient;
+  }
+  &:hover::after {
+    opacity: 1;
+    @extend %transition;
+  }
+  &:hover .our-team_icon {
+    opacity: 1;
+    z-index: 100;
+    @extend %transition;
+  }
+  &:hover {
+    transform: translate(-15px, -15px);
+    box-shadow: 15px 15px 1px #95e1d3;
+    @extend %transition;
+  }
+}
+
+.our-team_icon {
+  @include box-size(55px, 55px);
+  padding: 8px;
+  background-color: $yellow-color;
+  color: $pink-color;
+  margin: 2px;
+  @extend %transition;
+  cursor: pointer;
+  opacity: 0;
+  &:hover {
+    background-color: $pink-color;
+  }
+  &:hover .svg-icon {
+    fill: $header-text-color;
+  }
+}
+
+.svg-icon {
+  fill: $pink-color;
+}

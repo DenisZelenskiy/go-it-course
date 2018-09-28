@@ -1,0 +1,47 @@
+.services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.row-up {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.row-down {
+    text-transform: uppercase;
+    padding: 22px 0 0 0;
+}
+
+.row-down::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin: 45px auto;
+}
+
+.services-content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    -ms-flex-preferred-size: 31%;
+    flex-basis: 31%;
+}
+
+.service-content-box__discription {
+    -ms-flex-preferred-size: 85%;
+    flex-basis: 85%;
+}

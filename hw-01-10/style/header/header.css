@@ -1,0 +1,102 @@
+.wrapper-bg {
+    position: relative;
+    padding-bottom: 130px;
+    background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(248, 142, 130, 0.9)), url("../../img/Eagle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
+  
+  .header .logo {
+    padding: 10px 0;
+    font-size: 30px;
+    font-family: "Montserrat-bold", Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .header .navigation_item {
+    margin-left: 50px;
+    padding: 10px 0;
+  }
+  
+  .header .navigation_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+    transition: .1s linear;
+  }
+  
+  .header .navigation_link:hover {
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+    transition: .1s linear;
+  }
+  
+  .header .navigation_link:hover .svg-icon-head {
+    fill: #fce38a;
+    transition: .1s linear;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+  
+  .header .navigation .svg-icon-head {
+    fill: #fff;
+  }
+  
+  .main-head {
+    display: inline-block;
+  }
+  
+  .main-head_top {
+    font-size: 72px;
+    font-family: "KaushanScript", Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  
+  .main-head_bottom {
+    font-size: 150px;
+    font-family: "Montserrat-bold", Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 130px;
+    text-transform: uppercase;
+  }
+  
+  .main-head_btn {
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    font-family: "Montserrat-bold", Arial, sans-serif;
+    color: #fff;
+    border: 3px solid #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .1s linear;
+  }
+  
+  .main-head_btn:hover {
+    border-color: #f38181;
+    color: #f38181;
+    transition: .1s ease;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  

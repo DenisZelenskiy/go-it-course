@@ -1,0 +1,43 @@
+.service-head {
+  &::after {
+    @include underline($pink-color, 45px);
+  }
+  &_top {
+    font-size: 24px;
+    @extend %font-Kaushan;
+    margin-bottom: 20px;
+  }
+  &_bottom {
+    font-size: 30px;
+    @extend %font-mont-bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.service-list {
+  @extend %flex-base;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  @extend %flex-base;
+  flex-wrap: wrap;
+  flex-basis: 370px;
+  margin-bottom: 100px;
+  &_box {
+    flex-basis: 84%;
+    text-align: left;
+  }
+  &_svg {
+    fill: $main-content-color;
+  }
+  &_name {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &_discription {
+    line-height: 20px;
+    @extend %font-roboto;
+  }
+}
