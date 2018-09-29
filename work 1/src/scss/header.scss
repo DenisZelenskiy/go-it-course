@@ -1,0 +1,350 @@
+.wrapper {
+  max-width: 83.3333%;
+  margin: 0 auto;
+}
+body {
+  min-width: 320px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.wrapper-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: calculateRem(31);
+  padding-bottom: calculateRem(31);
+}
+
+.header {
+  color: $font-color-white;
+  background-color: $color-background;
+}
+
+.link-logo {
+  color: $font-color-white;
+  font-family: $font-family-CormorantUnicase-Regular;
+  font-size: $font-size-large;
+  @media screen and (max-width: 900px) {
+    font-size: 22px;
+  }
+}
+
+.logo {
+  flex-basis: 25%;
+  @media screen and (max-width: 1200px) {
+    flex-basis: 35%;
+  }
+  @media screen and (max-width: 768px) {
+    flex-basis: 100%;
+    margin-bottom: calculateRem(30);
+    text-align: center;
+  }
+}
+.menuWRP {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @media screen and (max-width: 1200px) {
+    flex-basis: 65%;
+    justify-content: flex-end;
+  }
+  @media screen and (max-width: 768px) {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 480px;
+  @media screen and (max-width: 900px) {
+    width: 416px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 80px;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    @media screen and (max-width: 500px) {
+      margin-bottom: calculateRem(10);
+    }
+  }
+
+  &__item:last-child {
+    @media screen and (max-width: 500px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item--active::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #ddd;
+    position: absolute;
+    margin-top: calculateRem(7);
+  }
+
+  &__item--active:hover::after,
+  &__item--active:focus::after {
+    width: 100%;
+    @media screen and (max-width: 500px) {
+      width: 0%;
+    }
+  }
+
+  &__item--active:hover &__link,
+  &__item--active:focus &__link {
+    @media screen and (max-width: 500px) {
+      color: $font-color-red;
+    }
+  }
+
+  &__select {
+    color: $font-color-white;
+    background-color: #000;
+    font-size: $font-size-very-small;
+    font-family: $font-family-Roboto;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+  }
+
+  &__select:hover,
+  &__select:focus {
+    @media screen and (max-width: 500px) {
+      color: $font-color-red;
+    }
+  }
+
+  &__link {
+    font-size: $font-size-very-small;
+    font-family: $font-family-Roboto;
+    color: $font-color-white;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+  &__link--decor::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #686868 transparent transparent transparent;
+    margin-left: calculateRem(14);
+  }
+}
+.au-formWRP {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+
+  &__regLogin {
+    width: 143px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__regLogin::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: $font-color-grey;
+    position: absolute;
+    transform: translate(63px, 2px);
+  }
+}
+.au-form {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  justify-content: flex-end;
+  @media screen and (min-width: 1200px) {
+    padding-right: calculateRem(7);
+  }
+  @media screen and (max-width: 1200px) {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: calculateRem(30);
+  }
+
+  &__btn-login,
+  &__btn-reg {
+    color: $font-color-white;
+    position: relative;
+  }
+
+  &__btn-login {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-reg {
+  }
+
+  &__btn-like {
+    width: 16px;
+    height: 15px;
+  }
+
+  &__btn-inbox {
+    width: 14px;
+    height: 15px;
+  }
+
+  &__icon-like,
+  &__icon-inbox {
+    fill: $font-color-grey;
+    text-align: center;
+  }
+
+  &__icon-like {
+    width: 16px;
+    height: 15px;
+  }
+
+  &__icon-inbox {
+    width: 14px;
+    height: 15px;
+  }
+
+  &__icon-profile {
+    width: 16px;
+    height: 16px;
+    fill: #ddd;
+    margin-right: calculateRem(12);
+  }
+  &__btn-login:hover &__icon-profile {
+    transform: scale(1.2);
+    fill: $font-color-red;
+    transition: all 0.2s ease-in;
+  }
+
+  &__btn-inbox,
+  &__btn-like {
+    position: relative;
+  }
+
+  &__notification {
+    font-size: $font-size-very-very-small;
+    position: absolute;
+    color: $font-color-grey;
+    right: 0;
+    transform: translate(6px, -6px);
+  }
+
+  &__btn-login--active:hover,
+  &__btn-reg--active:hover,
+  &__btn-login--active:focus,
+  &__btn-reg--active:focus {
+    color: $font-color-red;
+    transition: all 0.2s ease-in;
+  }
+
+  &__btn-like--active:hover &__icon-like,
+  &__btn-inbox--active:hover &__icon-inbox,
+  &__btn-like--active:focus &__icon-like,
+  &__btn-inbox--active:focus &__icon-inbox {
+    transform: scale(1.2);
+    fill: $font-color-red;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.header-bottom {
+  &__form {
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    @media (min-width: 769px) and (max-width: 1000px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__select-reset {
+    position: relative;
+    color: $footer-font-black;
+    font-family: $font-family-Roboto;
+    font-size: $font-size-very-small;
+    transition: 0.2s linear;
+    &:hover::after {
+      opacity: 1;
+      transition: .2s linear;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      opacity: 0;
+      height: 1px;
+      width: 87px;
+      background-color: $font-color-main;
+      bottom: -5px;
+      left: 0;
+      transition: .2s linear;
+    }
+  }
+
+  &__select {
+    border: 1px solid $footer-font-black;
+    border-bottom: transparent;
+    &:not(:last-child) {
+      @media (min-width: 1000px) {
+        border-right: transparent;
+      }
+    }
+    color: $footer-font-black;
+    background-color: #fff;
+    padding: calculateRem(20) calculateRem(15);
+    flex-grow: 1;
+    font-family: $font-family-Roboto;
+    font-size: $font-size-very-small;
+
+    @media (min-width: 769px) and (max-width: 1000px) {
+      flex-basis: 50%;
+    }
+  }
+}
+.search-input {
+  background: url("../img/sprite/magnifying-glass.svg") no-repeat;
+  background-size: 20px 20px;
+  background-position: 95% 50%;
+}
+.select-block {
+  border-bottom: 1px solid $footer-font-black;
+  margin-bottom: calculateRem(40);
+  &:after {
+    display: block;
+    height: 1px;
+    background-color: $footer-font-black;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+}

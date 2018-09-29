@@ -1,0 +1,141 @@
+.footer { 
+  background-color: $footer-background;
+  &_list {
+    &--item {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      } 
+    }
+    
+    &--link, &--discr {
+      font-size: $font-size-very-small;
+      font-family: $font-family-Roboto;
+      line-height: 15px;
+      transition: .2s linear;
+    }
+    &--link:hover {
+      border-bottom: 1px solid black;
+      transition: .2s linear;
+      cursor: pointer;
+    }
+  
+  }
+  &_block {
+    @media (max-width: 480px) {
+      width: 80%;
+      margin-bottom: calculateRem(40);
+      text-align: center;
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      flex-basis: 35%;
+      margin-bottom: calculateRem(40);
+    }
+    &:nth-child(-n+3) {
+      @media (min-width: 769px) and (max-width: 1000px) {
+        margin-bottom: calculateRem(40);
+      }
+    }
+    @media (min-width: 769px) and (max-width: 1000px) {
+      flex-basis: 30%;
+    }
+    width: 17%;
+    & > h3 {
+      margin-bottom: calculateRem(41);
+    }
+   &:nth-child(2){
+    @media (min-width: 769px) and (max-width: 1000px) {
+      flex-basis: 18%;
+    }
+    @media (max-width: 480px) {
+      width: 80%;
+
+    }
+     width: 8%;
+   }
+   &--head {
+    font-family: $font-family-Roboto;
+    font-size: calculateRem(18);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  &--logo {
+    font-size: calculateRem(28);
+    font-family: "CormorantUnicase-Bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  &--news {
+    font-size: $font-size-very-small;
+    font-family: $font-family-Roboto;
+    line-height: 15px;
+    margin-bottom: calculateRem(25);
+  }
+  &--svg-box {
+    display: flex;
+    justify-content: space-between;
+    > a > svg:hover {
+      fill: $font-color-red;
+      transition: .2s linear;
+    }
+  }
+
+  
+   &--btn {
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    &.join {
+      padding: 16px 0;
+      border-left: 1px solid $footer-font-black;
+      transition: .2s linear;
+      font-weight: 500;
+      width: calculateRem(150);
+      &:hover {
+        color: $font-color-red;
+        transition: .2s linear;
+      }
+    }
+    &.plane {
+      fill: #fff;
+      transition: .2s linear;
+      &:hover {
+        fill: $font-color-red;
+        transition: .2s linear;
+      }
+    }
+  }
+   &:nth-child(5) > p {
+     margin-bottom: calculateRem(25);
+   }
+  }
+  & .wrapper {
+    padding: calculateRem(105) 0 calculateRem(75) 0;
+  }
+  &__bottom {
+    background-color: #222;
+    padding: calculateRem(19) 0;
+    &--copyright {
+      color: #666666;
+      text-align: center;
+    }
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width: 481px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.foo_btn {
+  display: flex;
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+}

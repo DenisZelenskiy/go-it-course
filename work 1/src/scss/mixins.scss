@@ -1,0 +1,57 @@
+@mixin flex($justify-content, $align-items, $wrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+%flex-base {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin fonts($size, $family, $color) {
+  font-size: $size;
+  font-family: $family, Arial, sans-serif;
+  color: $color;
+}
+
+@mixin box-size($width, $height) {
+  width: $width;
+  min-height: $height;
+}
+
+@mixin underline($color, $top-margin) {
+  @extend %underline-base;
+  background-color: $color;
+  margin: $top-margin auto;
+}
+
+%underline-base {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+}
+@mixin background ($gradient, $url) {
+  background: $gradient, url($url);
+  @extend %bg;
+}
+
+%bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+%font-Kaushan {
+  font-family: "KaushanScript", Arial, sans-serif;
+}
+
+%font-mont-bold {
+  font-family: "Montserrat-bold", Arial, sans-serif;
+}
+%font-roboto {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #b3b3b3;
+}
+%transition {
+  transition: .1s linear;
+}
