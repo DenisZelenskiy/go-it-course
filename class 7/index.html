@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content-placeholder"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <!-- <template id="address-template">
+
+        <p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
+
+    </template>  -->
+
+    <!-- ==================================== -->
+
+    <!-- <template id="example-template">
+
+        {{#each people}}
+
+        <p>{{firstName}} {{lastName}}</p>
+
+        {{/each}}
+
+    </template> -->
+
+    <!-- ////////////////////// -->
+    <!-- <div id="menu">
+        <template id="example-template">
+            <h2 class="title">{{title}}</h2>
+            <ul>
+                {{#each items}}
+
+                <li>{{this}}</li>
+
+                {{/each}}
+            </ul>
+        </template>
+    </div> -->
+
+    <!-- ================================= -->
+    <!-- <template id="built-in-helpers-template">
+
+        {{#each animals}}
+
+        <p>
+
+            The {{name}} says 
+            {{#if noise}} 
+            "{{noise}}". 
+            {{else}} 
+            nothing since its a {{name}}. 
+            {{/if}}
+
+        </p>
+
+        {{/each}}
+
+    </template>
+ -->
+
+    <!-- ================================================= -->
+
+    <template id=gallery>
+
+        <h2 class="gallery-title">{{title}}</h2>
+
+        <div class="gallery-content">
+
+            {{#each items}}
+
+            <div class="gallery-item">
+
+                <img class="gallery-img" src={{img}} alt={{text}}>
+
+                <p class="gallery-text">{{text}}</p>
+
+            </div>
+
+            {{/each}}
+
+        </div>
+
+    </template>
+
+    <div class="gallery"></div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
