@@ -67,13 +67,9 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = (login) => login.length >= 4 && login.length <= 16;
 
-
-
-console.log(isLoginValid);
-
-// const isLoginUnique = function(allLogins, login) {
-//   // код
-// };
+const isLoginUnique = function(allLogins, login) {
+  
+};
 
 // const addLogin = function(allLogins, login) {
 //   // код
