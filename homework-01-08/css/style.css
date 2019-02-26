@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.image-gallery {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.fullview {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  padding: 5px;
+}
+
+.items-view {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+}
+.items-view li {
+  width: 25%;
+}
+
+.border {
+  filter: opacity(20%);
+}
